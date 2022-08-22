@@ -1,4 +1,4 @@
-public class Lab0{
+public class Lab1{
 	
 	private static class Arithmetic{
 		//private fields
