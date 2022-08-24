@@ -1,4 +1,4 @@
-public class Lab0 {
+public class Part2 {
 
 	public static class Sports {
 		private String name;
