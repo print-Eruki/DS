@@ -1,7 +1,7 @@
 package lab2;
 import java.util.Arrays;
 
-public class Lab03P3Wrapper {
+public class Lab01P3Wrapper {
 	public static boolean isValidSudoku(char[][] board) {
         for(int i =0; i<9;i++) {
         	for(int j=0; j<9;j++){
@@ -63,4 +63,18 @@ public class Lab03P3Wrapper {
 		}
 		return answer;		
     }
+	
+	public static int[] getRowPascalTriangle(int rowIndex) {
+		int[] arr = new int[rowIndex+1];
+		int prev = 1;
+		int curr = 1;
+		arr[0] = 1;
+		for(int i =1;i<=rowIndex;i++){
+			arr[i] = (prev*((rowIndex -i)+1))/i;
+			curr = (prev*((rowIndex -i)+1))/i;
+			prev = curr;
+		}
+		return arr;
+	}
+	}
 }
